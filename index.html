@@ -16,7 +16,7 @@
         }   
     </style>
   </head>
-  <body><br><br><center>
+  <body><br><br><center><div name="chart" /></center>
     <script type="text/javascript">
     var w = 600,                        //width
     h = 600,                            //height
@@ -26,7 +26,7 @@
             {"label":"Hillary", "value":1428}, 
             {"label":"Remaining", "value":1472}];
     
-    var vis = d3.select("body")
+    var vis = d3.select("#chart")
         .append("svg:svg")              //create the SVG element inside the <body>
         .data([data])                   //associate our data with the document
             .attr("width", w)           //set the width and height of our visualization (these will be attributes of the <svg> tag
