@@ -17,7 +17,7 @@ function refresh()
     {
        bernie=window.bernie;
        hillary=window.hillary;
-       console.out("sposda be "+hillary)
+       console.log("sposda be "+hillary)
        hillary=2233;
     }
     catch(e)
