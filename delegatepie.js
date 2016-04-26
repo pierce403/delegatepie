@@ -69,4 +69,4 @@ function(data)
   console.log("Clinton has "+window.clinton);
   refresh();
 });
-
+refresh();
