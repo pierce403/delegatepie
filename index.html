@@ -28,9 +28,13 @@
     h = 410,                            //height
     r = 200,                            //radius
     color = d3.scale.category20c();     //builtin range of colors
-    data = [{"label":"Bernie (1151)", "value":1151},
-            {"label":"Hillary (1428)", "value":1428}, 
-            {"label":"Remaining (1472)", "value":1472}];
+    total = 4051
+    bernie = 1153
+    hillary = 1473
+    remainint = total-bernie-hillary
+    data = [{"label":"Bernie ("+bernie+")", "value":bernie},
+            {"label":"Hillary ("+hillary+")", "value":hillary}, 
+            {"label":"Remaining ("+remaining+")", "value":remaining}];
     
     var vis = d3.select("#chart")
         .append("svg:svg")              //create the SVG element inside the <body>
