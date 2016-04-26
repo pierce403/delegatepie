@@ -13,16 +13,8 @@ function refresh()
     //hillary = 1428
     hillary = 2222
     
-    try
-    {
-       bernie=window.sanders;
-       hillary=window.clinton;
-       console.log("sposda be "+hillary);
-    }
-    catch(e)
-    {
-      console.out("oh no.. "+e);
-    }
+    if (typeof(window.sanders) != "undefined")bernie=window.sanders;
+    if (typeof(window.clinton) != "undefined")hillary=window.clinton;
     
     remaining = total-bernie-hillary;
     
