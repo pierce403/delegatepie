@@ -15,10 +15,9 @@ function refresh()
     
     try
     {
-       bernie=window.bernie;
-       hillary=window.hillary;
-       console.log("sposda be "+hillary)
-       hillary=2233;
+       bernie=window.sanders;
+       hillary=window.clinton;
+       console.log("sposda be "+hillary);
     }
     catch(e)
     {
