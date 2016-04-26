@@ -10,7 +10,8 @@ function refresh()
     color = d3.scale.category20c();     //builtin range of colors
     total = 4051
     bernie = 1153
-    hillary = 1428
+    //hillary = 1428
+    hillary = 222
     
     try
     {
@@ -22,7 +23,8 @@ function refresh()
       console.out("oh no.. "+e);
     }
     
-    remaining = total-bernie-hillary
+    remaining = total-bernie-hillary;
+    
     data = [{"label":"Bernie ("+bernie+")", "value":bernie},
             {"label":"Hillary ("+hillary+")", "value":hillary}, 
             {"label":"Remaining ("+remaining+")", "value":remaining}];
