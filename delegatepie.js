@@ -22,6 +22,7 @@ function refresh()
             {"label":"Hillary ("+hillary+")", "value":hillary}, 
             {"label":"Remaining ("+remaining+")", "value":remaining}];
     
+    $("#chart").html("");
     var vis = d3.select("#chart")
         .append("svg:svg")              //create the SVG element inside the <body>
         .data([data])                   //associate our data with the document
