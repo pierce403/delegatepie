@@ -11,12 +11,14 @@ function refresh()
     total = 4051
     bernie = 1153
     //hillary = 1428
-    hillary = 222
+    hillary = 2222
     
     try
     {
        bernie=window.bernie;
        hillary=window.hillary;
+       console.out("sposda be "+hillary)
+       hillary=2233;
     }
     catch(e)
     {
