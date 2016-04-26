@@ -66,5 +66,6 @@ function(data)
   console.log("Sanders has "+window.sanders);
   window.clinton = data.delegates.clinton-data.superdelegates.clinton
   console.log("Clinton has "+window.clinton);
+  refresh();
 });
-refresh();
+
