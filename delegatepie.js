@@ -17,6 +17,11 @@ function refresh()
     
     remaining = total-bernie-hillary;
     
+    percent_requirement = ((2026-bernie)/remaining)*100;
+    
+    document.getElementById("winning").innerHTML = "Bernie needs <b>"+percent_requirement.toFixed(2)+"%</b> of the remaining pledged delegates to get the pledged delegate majority.";
+    console.log("Bernie needs <b>"+percent_requirement.toFixed(2)+"%</b> of the remaining pledged delegates to get the pledged delegate majority.");    
+
     data = [{"label":"Bernie ("+bernie+")", "value":bernie},
             {"label":"Hillary ("+hillary+")", "value":hillary}, 
             {"label":"Remaining ("+remaining+")", "value":remaining}];
