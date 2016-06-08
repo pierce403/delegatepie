@@ -9,8 +9,8 @@ function refresh()
     r = 200,                            //radius
     color = d3.scale.category20c();     //builtin range of colors
     total = 4051
-    bernie = 1497
-    hillary = 1768
+    bernie = 1653-48
+    hillary = 2488-571
     
     if (typeof(window.sanders) != "undefined")bernie=window.sanders;
     if (typeof(window.clinton) != "undefined")hillary=window.clinton;
