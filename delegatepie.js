@@ -28,7 +28,7 @@ function refresh()
     percent_requirement = (required_supers/total_supers)*100;
     percent_current = (bernie_supers/total_supers)*100
     
-    document.getElementById("winning").innerHTML = "Bernie needs "+required_supers+", or "+percent_requirement.toFixed(2)+"% of the superdelegates to win the nomination.<br>He currently has "+bernie_supers+", or "+percent_current.toFixed(2)+"%";
+    document.getElementById("winning").innerHTML = "Bernie needs "+required_supers+", or "+percent_requirement.toFixed(2)+"% of the<br>superdelegates to win the nomination.<br>He currently has "+bernie_supers+", or "+percent_current.toFixed(2)+"%";
 
     data = [{"label":"Bernie ("+bernie_supers+")", "value":bernie_supers},
             {"label":"Hillary ("+hillary_supers+")", "value":hillary_supers}, 
