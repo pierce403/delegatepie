@@ -8,23 +8,30 @@ function refresh()
     h = 410,                            //height
     r = 200,                            //radius
     color = d3.scale.category20c();     //builtin range of colors
-    total = 4051
-    bernie = 1653-48
-    hillary = 2488-571
+
+    total_needed = 2383;
+    total_supers = 718;
+    
+    bernie = 1881;
+    bernie_supers = 49;
+    hillary = 2800;
+    hillary_supers = 581;
     
     if (typeof(window.sanders) != "undefined")bernie=window.sanders;
+    if (typeof(window.sanders_supers) != "undefined")bernie_supers=window.sanders_supers;
     if (typeof(window.clinton) != "undefined")hillary=window.clinton;
+    if (typeof(window.clinton_supers) != "undefined")hillary_supers=window.clinton_supers;
     
-    remaining = total-bernie-hillary;
+    remaining_supers = total_supers-bernie_supers-hillary_supers;
     
     percent_requirement = ((2026-bernie)/remaining)*100;
     
     document.getElementById("winning").innerHTML = "Bernie needs <b>"+percent_requirement.toFixed(2)+"%</b> of the remaining pledged<br>delegates to get the pledged delegate majority.";
     console.log("Bernie needs <b>"+percent_requirement.toFixed(2)+"%</b> of the remaining pledged delegates to get the pledged delegate majority.");    
 
-    data = [{"label":"Bernie ("+bernie+")", "value":bernie},
-            {"label":"Hillary ("+hillary+")", "value":hillary}, 
-            {"label":"Remaining ("+remaining+")", "value":remaining}];
+    data = [{"label":"Bernie ("+bernie+")", "value":bernie_supers},
+            {"label":"Hillary ("+hillary+")", "value":hillary_supers}, 
+            {"label":"Remaining ("+remaining+")", "value":remaining_supers}];
     
     $("#chart").html("");
     var vis = d3.select("#chart")
