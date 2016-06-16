@@ -32,7 +32,7 @@ function refresh()
 
     data = [{"label":"Bernie ("+bernie_supers+")", "value":bernie_supers},
             {"label":"Hillary ("+hillary_supers+")", "value":hillary_supers}, 
-            {"label":"Remaining ("+remaining_supers+")", "value":remaining_supers}];
+            {"label":"Undeclared ("+remaining_supers+")", "value":remaining_supers}];
     
     $("#chart").html("");
     var vis = d3.select("#chart")
