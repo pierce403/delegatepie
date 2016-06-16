@@ -31,9 +31,9 @@ function refresh()
     document.getElementById("winning").innerHTML = "Bernie needs "+required_supers+", or "+percent_requirement.toFixed(2)+"% of the<br>superdelegates to win the nomination.<br>He currently has "+bernie_supers+", or "+percent_current.toFixed(2)+"%";
 
     data = [
-            {"label":"Hillary ("+hillary_supers+")", "value":hillary_supers},
-            {"label":"Unknown ("+remaining_supers+")", "value":remaining_supers},
-            {"label":"Bernie ("+bernie_supers+")", "value":bernie_supers},
+            {"label":"Hillary: "+hillary_supers, "value":hillary_supers},
+            {"label":""+remaining_supers+")", "value":remaining_supers},
+            {"label":"Bernie: "+bernie_supers, "value":bernie_supers},
             ];
     
     $("#chart").html("");
