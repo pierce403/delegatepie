@@ -29,9 +29,9 @@ function refresh()
     document.getElementById("winning").innerHTML = "Bernie needs <b>"+percent_requirement.toFixed(2)+"%</b> of the remaining pledged<br>delegates to get the pledged delegate majority.";
     console.log("Bernie needs <b>"+percent_requirement.toFixed(2)+"%</b> of the remaining pledged delegates to get the pledged delegate majority.");    
 
-    data = [{"label":"Bernie ("+bernie+")", "value":bernie_supers},
-            {"label":"Hillary ("+hillary+")", "value":hillary_supers}, 
-            {"label":"Remaining ("+remaining+")", "value":remaining_supers}];
+    data = [{"label":"Bernie ("+bernie_supers+")", "value":bernie_supers},
+            {"label":"Hillary ("+hillary_supers+")", "value":hillary_supers}, 
+            {"label":"Remaining ("+remaining_supers+")", "value":remaining_supers}];
     
     $("#chart").html("");
     var vis = d3.select("#chart")
