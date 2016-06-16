@@ -32,8 +32,8 @@ function refresh()
 
     data = [
             {"label":"Hillary ("+hillary_supers+")", "value":hillary_supers},
+            {"label":"("+remaining_supers+")", "value":remaining_supers},
             {"label":"Bernie ("+bernie_supers+")", "value":bernie_supers},
-            {"label":"Undeclared ("+remaining_supers+")", "value":remaining_supers},
             ];
     
     $("#chart").html("");
