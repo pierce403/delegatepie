@@ -68,9 +68,11 @@ function refresh()
 $.getJSON('http://cors.io/?u=http://www.realclearpolitics.com/json/ap_results/2016_primaries/superdelegates.json',
 function(data)
 {
-  window.sanders = data.delegates.sanders-data.superdelegates.sanders;
+  window.sanders = data.delegates.sanders
+  window.sanders_supers = data.superdelegates.sanders;
   console.log("Sanders has "+window.sanders);
-  window.clinton = data.delegates.clinton-data.superdelegates.clinton
+  window.clinton = data.delegates.clinton;
+  window.clinton_supers = data.superdelegates.clinton;
   console.log("Clinton has "+window.clinton);
   refresh();
 });
