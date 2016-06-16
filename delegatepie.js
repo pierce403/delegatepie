@@ -24,10 +24,11 @@ function refresh()
     
     remaining_supers = total_supers-bernie_supers-hillary_supers;
     
-    percent_requirement = ((2026-bernie)/0)*100;
+    required_supers = total_needed-bernie-bernie_supers;
+    percent_requirement = (required_supers/total_supers)*100;
+    percent_current = (bernie_supers/total_supers)*100
     
-    document.getElementById("winning").innerHTML = "Bernie needs <b>"+percent_requirement.toFixed(2)+"%</b> of the remaining pledged<br>delegates to get the pledged delegate majority.";
-    console.log("Bernie needs <b>"+percent_requirement.toFixed(2)+"%</b> of the remaining pledged delegates to get the pledged delegate majority.");    
+    document.getElementById("winning").innerHTML = "Bernie needs "+required_supers+", or "+percent_requirement.toFixed(2)+"% of the superdelegates to win the nomination.<br>He currently has "+bernie_supers+", or "+percent_current.toFixed(2)+"%";
 
     data = [{"label":"Bernie ("+bernie_supers+")", "value":bernie_supers},
             {"label":"Hillary ("+hillary_supers+")", "value":hillary_supers}, 
